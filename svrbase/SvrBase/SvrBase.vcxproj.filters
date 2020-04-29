@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{a4a5f8da-85dd-47e5-bf71-8aca9fb5e91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\include">
+      <UniqueIdentifier>{7bccf457-2839-49ac-8b45-bf5ce28b85dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\src">
+      <UniqueIdentifier>{d04c7a6f-b6ef-4e4f-a5a7-ea9a421a8c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv">
+      <UniqueIdentifier>{177ff808-4186-4850-b3ec-4c33dd31daa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\include">
+      <UniqueIdentifier>{68523bdb-dabf-4b21-8bdf-e6795f6b1375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\src">
+      <UniqueIdentifier>{5fdbf512-e62c-47ef-9179-131f62cdc74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{f294b606-2fea-47b2-b192-bdfc50c0b704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg\include">
+      <UniqueIdentifier>{5b243ed2-2e37-4700-883d-ccffbc3720b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg\src">
+      <UniqueIdentifier>{0dde23a6-12f5-46aa-9d6e-467f0500683b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openssl">
+      <UniqueIdentifier>{fde94a4b-4eef-41ec-a848-ea14f11f7690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openssl\include">
+      <UniqueIdentifier>{39b4943b-3914-45af-8d9d-2d53b2f1a8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openssl\src">
+      <UniqueIdentifier>{ddc8cf98-f78c-4e01-83f7-dbe46291a074}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\common.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\CoreMgr.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\EventMgr.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\LocalDefine.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\RcObject.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\singleton.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\Task.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\util.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvBase.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\uvdefine.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvFile.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvLoop.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvMutex.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvNetBase.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvPipeBase.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvPipeCli.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvPipeSvr.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvSem.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvTaskPool.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvTaskThread.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvTcpCli.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvTcpSvr.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvThread.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvUdp.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\include\confdef.h">
+      <Filter>cfg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\include\Config.h">
+      <Filter>cfg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\include\JsonReadHandler.h">
+      <Filter>cfg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\include\rapidjsoninc.h">
+      <Filter>cfg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvBarrier.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvCond.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvRwLock.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\GuidTool.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\RandTool.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\opensslinc.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\OpensslBase64.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\OpensslMd5.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\OpensslSha.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\OpensslDes.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\include\OpensslRsa.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvTimer.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvDl.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libuv\include\UvUtil.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\MemMgr.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\MemOper.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\Log.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\Mutex.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\include\MemBuffer.h">
+      <Filter>base\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\CoreMgr.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\EventMgr.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\RcObject.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\util.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvBase.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvFile.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvLoop.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvMutex.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvNetBase.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvPipeBase.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvPipeCli.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvPipeSvr.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvSem.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvTaskPool.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvTaskThread.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvTcpCli.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvTcpSvr.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvThread.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvUdp.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg\src\Config.cpp">
+      <Filter>cfg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg\src\JsonReadHandler.cpp">
+      <Filter>cfg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvBarrier.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvCond.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvRwLock.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\GuidTool.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\RandTool.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="openssl\src\OpensslBase64.cpp">
+      <Filter>openssl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="openssl\src\OpensslMd5.cpp">
+      <Filter>openssl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="openssl\src\OpensslSha.cpp">
+      <Filter>openssl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="openssl\src\OpensslDes.cpp">
+      <Filter>openssl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="openssl\src\OpensslRsa.cpp">
+      <Filter>openssl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvTimer.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvDl.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libuv\src\UvUtil.cpp">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\MemMgr.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\MemOper.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\Log.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\src\MemBuffer.cpp">
+      <Filter>base\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
