@@ -1,0 +1,36 @@
+project("SvrBase")
+
+set(home_dir "${CMAKE_SOURCE_DIR}")
+set(lib_dir ${home_dir}/third)
+
+set(CMAKE_VERBOSE_MAKEFILE on)
+set(CMAKE_CXX_COMPILER g++)
+set(CMAKE_C_COMPILER gcc)
+
+macro(add_src_subdirs source_files)
+	foreach(_subdir ${ARGN})
+		set(_sub_files "")
+		if("${_subdir}" STREQUAL ".")
+			aux_source_directory("${CMAKE_CURRENT_SOURCE_DIR}" _sub_files)
+			include_directories(${CMAKE_CURRENT_SOURCE_DIR}/) 
+		else()
+			aux_source_directory("${CMAKE_CURRENT_SOURCE_DIR}/${_subdir}/src" _sub_files)
+			include_directories(${CMAKE_CURRENT_SOURCE_DIR}/${_subdir}/include) 
+		endif()
+		set(source_files ${_sub_files} ${${source_files}})
+	endforeach(_subdir)
+endmacro()
+
+add_src_subdirs(source_files "base" "cfg" "libuv" "openssl")
+MESSAGE(STATUS "Src :" ${source_files})
+
+include_directories(${lib_dir}/uuid/include)
+include_directories(${lib_dir}/libuv/linux/include)
+include_directories(${lib_dir}/openssl/linux/include)
+include_directories(${lib_dir}/rapidjson)
+
+set(CMAKE_C_FLAGS "-ggdb -fPIC")
+set(CMAKE_CXX_FLAGS "-ggdb -std=c++0x -fPIC")
+SET(LIBRARY_OUTPUT_PATH "${home_dir}/bin")
+add_library(svrbase STATIC ${source_files})
+add_library(svrbaseshare SHARED ${source_files})
