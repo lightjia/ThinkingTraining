@@ -1,10 +1,13 @@
-#include"Log.h"
+#include"CPuls11Test.h"
 int main(int argc, char const *argv[])
 {
     /* code */
     struct tagLogInitParam stLog;
     sLog->Init(stLog);
     LOG_DBG("Hello Jia");
-    sleep_ms(1000);
+    test_cpuls();
+    for(;;){
+        sleep_ms(1000);
+    }
     return 0;
 }
