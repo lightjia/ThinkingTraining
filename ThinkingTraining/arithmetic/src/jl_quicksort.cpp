@@ -1,36 +1,31 @@
 #include "jl_sort.h"
 
-static void _quicksort(tagJlSortParam &stSort, unsigned iStart, unsigned iEnd)
+static void _quicksort(CJlSortBase &stSort, int iStart, int iEnd)
 {
     if (iStart < iEnd)
     {
-        unsigned iFlag = iStart;
-        unsigned iStartPos = iStart;
-        unsigned iEndPos = iEnd;
-
-        while (iEndPos > iStartPos)
+        int iFlag = iEnd;
+        int iStartPos = iStart;
+        int iOffPos = iStart - 1;
+        while (iEnd > iStartPos)
         {
-            if (stSort.pCmpHandler(stSort.GetElem(iEndPos), stSort.GetElem(iFlag)) != JL_COMPARE_RESULT_LESS)
+            if(stSort.Cmp(iFlag, iStartPos) == JL_COMPARE_RESULT_LARGE)
             {
-                --iEndPos;
-                continue;
+                 ++iOffPos;
+                stSort.Swap(iOffPos, iStartPos);
             }
 
-            while (iEndPos > iStartPos && stSort.pCmpHandler(stSort.GetElem(iStartPos), stSort.GetElem(iFlag)) != JL_COMPARE_RESULT_LARGE)
-            {
-                ++iStartPos;
-            }
-
-            if (iEndPos > iStartPos)
-            {
-                stSort.Swap(iStartPos, iEndPos);
-            }
+            ++iStartPos;
         }
-        
+
+        ++iOffPos;
+        stSort.Swap(iOffPos, iFlag);
+        _quicksort(stSort, iStart, iOffPos - 1);
+        _quicksort(stSort, iOffPos + 1, iEnd);
     }
 }
 
-JL_COMPARE_RET jl_quicksort(tagJlSortParam &stSort)
+JL_COMPARE_RET jl_quicksort(CJlSortBase &stSort)
 {
     CHECK_JLSORTPARAM(stSort);
     _quicksort(stSort, 0, stSort.iArrayLen - 1);

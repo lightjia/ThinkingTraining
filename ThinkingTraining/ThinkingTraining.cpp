@@ -1,12 +1,13 @@
-#include"CPuls11Test.h"
+#include "CPuls11Test.h"
+#include "sort_test.h"
 int main(int argc, char const *argv[])
 {
     /* code */
     struct tagLogInitParam stLog;
     sLog->Init(stLog);
-    LOG_DBG("Hello Jia");
-    test_cpuls();
-    for(;;){
+    TestQuickSort(10000, 10000);
+    for (;;)
+    {
         sleep_ms(1000);
     }
     return 0;

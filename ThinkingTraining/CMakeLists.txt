@@ -19,7 +19,7 @@ macro(add_src_subdirs source_files)
 	endforeach(_subdir)
 endmacro()
 
-add_src_subdirs(source_files "." "datadef" "arithmetic" "cpuls11")
+add_src_subdirs(source_files "." "datadef" "arithmetic" "cpuls11" "helper")
 
 include_directories(${lib_dir}/svrbase/base/include)
 include_directories(${lib_dir}/svrbase/cfg/include)
