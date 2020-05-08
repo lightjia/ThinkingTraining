@@ -4,7 +4,7 @@ static void _quicksort(CJlSortBase &stSort, int iStart, int iEnd)
 {
     if (iStart < iEnd)
     {
-        int iFlag = iEnd;
+        int iFlag = iEnd;   //以最后一位作为参照进行二分
         int iStartPos = iStart;
         int iOffPos = iStart - 1;
         while (iEnd > iStartPos)
@@ -28,7 +28,7 @@ static void _quicksort(CJlSortBase &stSort, int iStart, int iEnd)
 JL_COMPARE_RET jl_quicksort(CJlSortBase &stSort)
 {
     CHECK_JLSORTPARAM(stSort);
-    _quicksort(stSort, 0, stSort.iArrayLen - 1);
+    _quicksort(stSort, 0, static_cast<int>(stSort.iArrayLen - 1));
 
     return JL_COMPARE_RET_OK;
 }

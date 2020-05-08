@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
     /* code */
     struct tagLogInitParam stLog;
     sLog->Init(stLog);
-    TestQuickSort(10000, 10000);
+    TestQuickSort(10, 10000);
     for (;;)
     {
         sleep_ms(1000);

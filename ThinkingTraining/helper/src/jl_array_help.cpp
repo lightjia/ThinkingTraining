@@ -1,10 +1,19 @@
 #include "jl_array_help.h"
+#include "RandTool.h"
+
+void RandIntArray(int *pArray, int iArrayNum, int iRange)
+{
+    if (pArray && iArrayNum > 0)
+    {
+        for (int i = 0; i < iArrayNum; ++i)
+            pArray[i] = sRandTool->RandInt(1, iRange);
+    }
+}
 
 void PrintIntArray(int *pArray, int iArrayNum)
 {
     if (pArray && iArrayNum > 0)
     {
-        LOG_INFO("Print Array");
         char szData[500];
         memset(szData, '\0', 500);
         int iPos = 0;
